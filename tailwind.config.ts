@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,12 +62,45 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Financial Status Colors
+				bullish: {
+					DEFAULT: 'hsl(var(--bullish))',
+					foreground: 'hsl(var(--bullish-foreground))'
+				},
+				bearish: {
+					DEFAULT: 'hsl(var(--bearish))',
+					foreground: 'hsl(var(--bearish-foreground))'
+				},
+				neutral: {
+					DEFAULT: 'hsl(var(--neutral))',
+					foreground: 'hsl(var(--neutral-foreground))'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-bullish': 'var(--gradient-bullish)',
+				'gradient-bearish': 'var(--gradient-bearish)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'financial': 'var(--shadow-financial)',
+				'glow': 'var(--shadow-glow)',
+				'success': 'var(--shadow-success)',
+				'danger': 'var(--shadow-danger)'
+			},
+			fontFamily: {
+				'financial': 'var(--font-financial)',
+				'mono': 'var(--font-mono)'
+			},
+			transitionProperty: {
+				'financial': 'var(--transition-financial)',
+				'glow': 'var(--transition-glow)'
 			},
 			keyframes: {
 				'accordion-down': {
